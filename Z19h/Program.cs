@@ -23,13 +23,10 @@ else
     double i1 = Math.Pow(10, i-1);
     int b = (int)i1;
 
-
-    if (numA1/b == numA1%10)
-    {
-        int b2 = 10;
+        int b2 = 1;
         int d = 1;
      
-        while ((numA1/(b/10))%10 == (numA1/b2)%10)
+        while ((numA1/(b))%10 == (numA1/b2)%10)
         {
             b = b/10;
             b2 = b2*10;
@@ -39,8 +36,6 @@ else
             
         if (d>i/2) Console.WriteLine("Да, введённое число является палиндромом");
         else Console.WriteLine("Введённое число не является палиндромом");
-    }
-    else Console.WriteLine("Введённое число не является палиндромом");
 
 }
 
